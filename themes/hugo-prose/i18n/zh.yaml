@@ -1,0 +1,17 @@
+- id: readMore
+  translation: "阅读全文"
+
+- id: comments
+  translation: "欢迎留言"
+
+- id: authorsBio
+  translation: "作者简介"
+
+- id: nextPost
+  translation: "下一篇 (旧)"
+
+- id: previousPost
+  translation: "上一篇 (新)"
+
+- id: notFound404
+  translation: "页面没找到（错误代码 404）"

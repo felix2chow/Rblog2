@@ -1,0 +1,65 @@
+baseurl: "https://swcyo.rbind.io"
+languageCode: "en-us"
+# defaultContentLanguage: "en"
+defaultContentLanguage: "zh"
+title: "欧阳松的博客"
+theme: "hugo-prose"
+googleAnalytics: ""
+disqusShortname: "swcyo"
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+footnotereturnlinkcontents: "↩"
+paginate: 10
+
+permalinks:
+  post: "/post/:year/:month/:day/:slug/"
+
+outputs:
+  home: [html, rss, json]
+
+# some menu items were added via the `menu` option in YAML in posts
+menu:
+  header:
+    - name: R语言教程
+      url: "/course/"
+      weight: 3
+    - name: 常用软件
+      url: "/software/"
+      weight: 4
+    - name: 生活点滴
+      url: "/post/"
+      weight: 5
+    - name: 本站搜索
+      url: "#"
+      weight: 6
+      identifier: menu-search
+
+  footer:
+    - name: 文章类别
+      url: "/categories/"
+      weight: 1
+      pre: "optional"
+    - name: 文章标签
+      url: "/tags/"
+      weight: 2
+      pre: "optional"
+    - name: 回到顶部
+      url: "#"
+
+params:
+  homePosts: 8
+  mainSections: ["post", "work"]
+  editLink: "/"
+  authorDelimiter: " / "
+  pageFeatures: [+sidenotes]
+  description: >
+    A website built through Hugo and blogdown with the hugo-prose theme.
+  footer: >
+    &copy; [Song Ou-Yang](https://swcyo.rbind.io)
+    Since 2021
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true
