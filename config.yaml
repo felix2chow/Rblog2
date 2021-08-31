@@ -47,7 +47,7 @@ menu:
 
 params:
   homePosts: 8
-  mainSections: ["post", "work"]
+  mainSections: ["post", "course"]
   editLink: "/"
   authorDelimiter: " / "
   pageFeatures: [+sidenotes]
