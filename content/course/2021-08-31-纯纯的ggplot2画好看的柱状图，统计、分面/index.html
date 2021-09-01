@@ -197,7 +197,7 @@ bar$group=rep(c(&#39;control&#39;, &#39;treat&#39;), each = 9) ## 新增一个�
 <pre class="r"><code>library(ggplot2) 
 suppressMessages(library(ggpubr))
 p&lt;-ggplot(bar,
-       aes(group,y=value,color=group,fill=group))+
+       aes(group,value,color=group,fill=group))+
   geom_bar(stat=&quot;summary&quot;,fun=mean,position=&quot;dodge&quot;)+ #柱状图
   stat_summary(fun.data = &#39;mean_sd&#39;, geom = &quot;errorbar&quot;, width = 0.5,position = position_dodge(0.9))+ ##一定要加载ggpubr，调用函数可以计算均数、标准差、CI等
   facet_grid(~gene,scales = &#39;free&#39;)+ #分面

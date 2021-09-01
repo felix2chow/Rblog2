@@ -51,7 +51,7 @@ knitr::kable(bar)
 library(ggplot2) 
 suppressMessages(library(ggpubr))
 p<-ggplot(bar,
-       aes(group,y=value,color=group,fill=group))+
+       aes(group,value,color=group,fill=group))+
   geom_bar(stat="summary",fun=mean,position="dodge")+ #柱状图
   stat_summary(fun.data = 'mean_sd', geom = "errorbar", width = 0.5,position = position_dodge(0.9))+ ##一定要加载ggpubr，调用函数可以计算均数、标准差、CI等
   facet_grid(~gene,scales = 'free')+ #分面

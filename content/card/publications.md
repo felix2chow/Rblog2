@@ -1,6 +1,6 @@
 ---
 title: Publications
-style: 'background: lightslategray; color: white;'
+style: 'background: darkslategray; color: white;'
 weight: 3
 ---
 

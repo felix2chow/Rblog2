@@ -78,9 +78,9 @@ blogdown:::install_hugo_bin("D:/hugo.exe")# 注意这里是三个冒号
     blogdown:::serve_site #预览网页效果
     ```
 
-### 上传文件至Github 需要先安装git，或者安装Github
+### 上传文件至Github 
 
-Desktop直接推送，不语。。。
+需要先安装git，或者安装Github Desktop直接推送，不语。。。
 
 ### 关联Netlify
 
