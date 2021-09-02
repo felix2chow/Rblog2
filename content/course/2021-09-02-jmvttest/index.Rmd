@@ -1,6 +1,6 @@
 ---
 title: 使用jmv包进行T检验
-author: R package build
+author: 欧阳松
 date: '2021-09-02'
 slug: jmvttest
 categories:
@@ -59,7 +59,7 @@ data('ToothGrowth') #调用牙齿生长数据
 ```
 
 ```{r dat2,echo=F}
-knitr::kable(head(ToothGrowth)],caption = 'ToothGrowth数据的部分显示',booktabs=T)
+knitr::kable(head(ToothGrowth),caption = 'ToothGrowth数据的部分显示',booktabs=T)
 ```
 
 ### t检验
