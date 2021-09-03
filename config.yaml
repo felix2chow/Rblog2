@@ -5,7 +5,7 @@ defaultContentLanguage: "zh"
 title: "欧阳松的博客"
 theme: "hugo-prose"
 googleAnalytics: ""
-disqusShortname: "swcyo"
+disqusShortname: ""
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 footnotereturnlinkcontents: "↩"
 paginate: 10
@@ -63,3 +63,4 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
