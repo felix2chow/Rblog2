@@ -1797,16 +1797,17 @@ Figure 2: TCGA-KICH中肿瘤与正常组织的PCA图
 <p>比如我们随机生成20个基因列表</p>
 <pre class="r"><code>hubgenes = sample(rownames(k),20)
 hubgenes</code></pre>
-<pre><code>##  [1] &quot;ENDOV&quot;    &quot;STAT3&quot;    &quot;MUL1&quot;     &quot;NCS1&quot;     &quot;ING2&quot;     &quot;FKSG66&quot;  
-##  [7] &quot;PBRM1&quot;    &quot;TPRN&quot;     &quot;ERI2&quot;     &quot;KLRD1&quot;    &quot;TP53TG3D&quot; &quot;KAZALD1&quot; 
-## [13] &quot;CCL4&quot;     &quot;PGM5&quot;     &quot;PRKCH&quot;    &quot;TAP2&quot;     &quot;ASAH1&quot;    &quot;PHLPP1&quot;  
-## [19] &quot;SETDB1&quot;   &quot;COMMD3&quot;</code></pre>
+<pre><code>##  [1] &quot;OR1J4&quot;    &quot;HSPB7&quot;    &quot;ARHGAP20&quot; &quot;RAD21&quot;    &quot;USP37&quot;    &quot;PP2D1&quot;   
+##  [7] &quot;F12&quot;      &quot;ZNF142&quot;   &quot;INIP&quot;     &quot;GABRA5&quot;   &quot;WIF1&quot;     &quot;GANAB&quot;   
+## [13] &quot;PTPRF&quot;    &quot;GCOM1&quot;    &quot;SMAP2&quot;    &quot;MYH7B&quot;    &quot;TMEM174&quot;  &quot;RTN2&quot;    
+## [19] &quot;CDKN3&quot;    &quot;EPB41L5&quot;</code></pre>
 <p>如果我们想看<strong>显著上调</strong>的基因，那么输入这个代码</p>
 <pre class="r"><code>t_choose(hubgenes,k,group_list,up_only = T)</code></pre>
-<pre><code>## [1] &quot;MUL1&quot;   &quot;ING2&quot;   &quot;KLRD1&quot;  &quot;PHLPP1&quot;</code></pre>
+<pre><code>## [1] &quot;OR1J4&quot; &quot;GANAB&quot; &quot;GCOM1&quot; &quot;CDKN3&quot;</code></pre>
 <p>如果我们想看<strong>显著下调</strong>的基因，那么输入这个代码</p>
 <pre class="r"><code>t_choose(hubgenes,k,group_list,down_only = T)</code></pre>
-<pre><code>## [1] &quot;ENDOV&quot;  &quot;STAT3&quot;  &quot;NCS1&quot;   &quot;ERI2&quot;   &quot;TAP2&quot;   &quot;ASAH1&quot;  &quot;SETDB1&quot; &quot;COMMD3&quot;</code></pre>
+<pre><code>##  [1] &quot;HSPB7&quot;    &quot;ARHGAP20&quot; &quot;RAD21&quot;    &quot;USP37&quot;    &quot;ZNF142&quot;   &quot;INIP&quot;    
+##  [7] &quot;PTPRF&quot;    &quot;SMAP2&quot;    &quot;MYH7B&quot;    &quot;TMEM174&quot;  &quot;RTN2&quot;     &quot;EPB41L5&quot;</code></pre>
 </div>
 <div id="画t-sne图" class="section level3">
 <h3>画t-SNE图</h3>
@@ -1976,11 +1977,11 @@ Figure 7: 火山图
 <div id="画韦恩图" class="section level3">
 <h3>画韦恩图</h3>
 <p>韦恩图一般用于多个数据集的汇总，比如有个三个数据的数字或基因，我们想知道哪些有交集的时候，可以用韦恩图，一般用于三种不同算法的差异基因的交集。</p>
-<p>我们随机生成三组数字，然后画三组交集的韦恩图，代码如下，见图 <a href="#fig:veen"><strong>??</strong></a></p>
-<pre class="r"><code>x = list(Deseq2=sample(1:100,30), #列表Deseq2
-         edgeR = sample(1:100,30),#列表edgeR
-         limma = sample(1:100,30))#limma
-draw_venn(x,&quot;venn plot&quot;)</code></pre>
+<p>我们随机生成三组数字，然后画三组交集的韦恩图，代码如下，见图 <a href="#fig:venn"><strong>??</strong></a></p>
+<pre class="r"><code>x= list(Deseq2=sample(1:100,30), #列表Deseq2
+         edgeR=sample(1:100,30),#列表edgeR
+         limma=sample(1:100,30))#limma
+tinyarray::draw_venn(x,&quot;venn plot&quot;)</code></pre>
 <hr />
 </div>
 <div id="画生存分析图" class="section level3">

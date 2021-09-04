@@ -37,6 +37,8 @@ menu:
 
 -   [Origin](https://www.origin.com/usa/en-us/store/download) 2019b （教育邮箱注册可以免费3个月）
 
+-   [jamovi](https://www.jamovi.org/)（一款开源免费的统计学软件，以SPSS的界面，嵌入R语言的统计）
+
 ## **科研实验软件**
 
 -   [ImageJ](https://imagej.nih.gov/ij/download.html)（开源免费，用于WB的灰度值测量、细胞计数、荧光融合、拼接图片等）

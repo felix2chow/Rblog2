@@ -1,5 +1,5 @@
 ---
-  title: 如何设置CRAN和Bioconductor的镜像源
+title: 如何设置CRAN和Bioconductor的镜像源
 author: 欧阳松
 date: '2021-09-03'
 slug: 如何设置cran和bioconductor的镜像源
