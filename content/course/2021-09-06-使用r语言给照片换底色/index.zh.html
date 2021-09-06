@@ -19,16 +19,13 @@ tags:
 <pre><code>library(magick)
 x&lt;-image_read(&#39;你的照片.jpg&#39;)
 ggplotify::as.ggplot(x)</code></pre>
-<pre class="r"><code>suppressMessages( library(magick))
-x&lt;-image_read(&#39;/Users/mac/Documents/Gitee/Rblog/logo.jpg&#39;)
-ggplotify::as.ggplot(x)</code></pre>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig"></span>
 <img src="{{< blogdown/postref >}}index.zh_files/figure-html/fig-1.png" alt="蓝底图" width="672" />
 <p class="caption">
 Figure 1: 蓝底图
 </p>
 </div>
-<p>用image_fill()函数直接就可以处理图片，选一个自己想要换的颜色，比如白色，代码一输，<code>as.ggplot</code>一转，就成了白底图 <a href="#fig:fig">1</a>。</p>
+<p>用image_fill()函数直接就可以处理图片，选一个自己想要换的颜色，比如白色，代码一输，<code>as.ggplot</code>一转，就成了白底图 <a href="#fig:fig2">2</a>。</p>
 <pre class="r"><code>y&lt;-image_fill(x,&#39;white&#39;,fuzz = 20)
 ggplotify::as.ggplot(y)</code></pre>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig2"></span>

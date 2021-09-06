@@ -19,13 +19,13 @@ tags:
     x<-image_read('你的照片.jpg')
     ggplotify::as.ggplot(x)
 
-```{r fig,fig.cap="蓝底图",fig.align='center'}
+```{r fig,fig.cap="蓝底图",fig.align='center',echo=FALSE}
 suppressMessages( library(magick))
 x<-image_read('/Users/mac/Documents/Gitee/Rblog/logo.jpg')
 ggplotify::as.ggplot(x)
 ```
 
-用image_fill()函数直接就可以处理图片，选一个自己想要换的颜色，比如白色，代码一输，`as.ggplot`一转，就成了白底图 \@ref(fig:fig)。
+用image_fill()函数直接就可以处理图片，选一个自己想要换的颜色，比如白色，代码一输，`as.ggplot`一转，就成了白底图 \@ref(fig:fig2)。
 
 ```{r fig2,fig.cap="白底图",fig.align='center'}
 y<-image_fill(x,'white',fuzz = 20)
