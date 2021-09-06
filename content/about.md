@@ -26,6 +26,10 @@ Email: [swcyo\@126.com](mailto:swcyo@126.com){.email}；[swcyo\@shzu.edu.cn](mai
 
 ------------------------------------------------------------------------
 
+在本站的下方有一个评论系统，可能由于网络原因，要晚一点才能加载出来，而如果要留言的话，你需要先注册一个Github账号。
+
+---
+
 <iframe src="https://map.baidu.com/@9580947.21,5482645.55,19z" width="600" height="450" frameborder="0" style="border:0">
 
 </iframe>

@@ -5,9 +5,13 @@ menu:
     weight: 1
 ---
 
-欧阳松 (SONG OU-YANG)
+[<img src="https://simpleicons.org/icons/r.svg" style="max-width:15%;min-width:40px;float:right;" alt="Github repo" />](https://github.com/swcyo/Rblog)
 
-石河子大学医学院第一附属医院泌尿外科 & 生殖医学科
+# 欧阳松 (SONG OU-YANG)
+
+## 石河子大学医学院第一附属医院
+
+## 泌尿外科 & 生殖医学科
 
 Department of Urology & Reproductive Medicine, First Affiliated Hospital, School of Medicine, Shihezi University
 
