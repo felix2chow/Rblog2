@@ -28,9 +28,12 @@ menu:
     - name: 生活点滴
       url: "/post/"
       weight: 5
+    - name: 学位论文
+      url: "https://swcyo.gitee.io/shzuthesis2021/"
+      weight: 6
     - name: 本站搜索
       url: "#"
-      weight: 6
+      weight: 7
       identifier: menu-search
 
   footer:
