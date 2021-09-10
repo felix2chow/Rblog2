@@ -5,6 +5,7 @@ summary: ""
 authors: 欧阳松
 tags: [R]
 categories: [教程]
+slug: bolgdown-exprience
 date: 2021-08-16T21:08:04+08:00
 lastmod: 2021-08-16T21:08:04+08:00
 editor_options: 

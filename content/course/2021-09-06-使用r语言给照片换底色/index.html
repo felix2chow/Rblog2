@@ -2,7 +2,7 @@
 title: 使用R语言给照片换底色
 author: 欧阳松
 date: '2021-09-06'
-slug: 使用r语言给照片换底色
+slug: change-photo-color
 categories:
   - 教程
   - R
@@ -10,7 +10,7 @@ tags:
   - magick
 ---
 
-<script src="{{< blogdown/postref >}}index.zh_files/header-attrs/header-attrs.js"></script>
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
 
 
 <p>这个教程来自Y叔的<a href="https://mp.weixin.qq.com/s/ZX4iHCHeGvtfCBl5-v5GVw">听说你用R把证件照给一键换底了</a></p>
@@ -20,7 +20,7 @@ tags:
 x&lt;-image_read(&#39;你的照片.jpg&#39;)
 ggplotify::as.ggplot(x)</code></pre>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig"></span>
-<img src="{{< blogdown/postref >}}index.zh_files/figure-html/fig-1.png" alt="蓝底图" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/fig-1.png" alt="蓝底图" width="672" />
 <p class="caption">
 Figure 1: 蓝底图
 </p>
@@ -29,7 +29,7 @@ Figure 1: 蓝底图
 <pre class="r"><code>y&lt;-image_fill(x,&#39;white&#39;,fuzz = 20)
 ggplotify::as.ggplot(y)</code></pre>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:fig2"></span>
-<img src="{{< blogdown/postref >}}index.zh_files/figure-html/fig2-1.png" alt="白底图" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/fig2-1.png" alt="白底图" width="672" />
 <p class="caption">
 Figure 2: 白底图
 </p>
@@ -41,9 +41,12 @@ p3&lt;- ggplotify::as.ggplot(image_fill(x,&#39;navyblue&#39;,fuzz = 20))
 p4&lt;- ggplotify::as.ggplot(image_fill(x,&#39;steelblue&#39;,fuzz = 20))
 p5&lt;- ggplotify::as.ggplot(image_fill(x,&#39;green&#39;,fuzz = 20))
 p6&lt;- ggplotify::as.ggplot(image_fill(x,&#39;white&#39;,fuzz = 20))
-cowplot::plot_grid(p1,p2,p3,p4,p5,p6,ncol = 3,labels = &quot;AUTO&quot;)</code></pre>
+p7&lt;- ggplotify::as.ggplot(x)
+p8&lt;- ggplotify::as.ggplot(image_fill(x,&#39;yellow&#39;,fuzz = 20))
+p9&lt;- ggplotify::as.ggplot(image_fill(x,&#39;black&#39;,fuzz = 20))
+cowplot::plot_grid(p1,p2,p3,p4,p5,p6,p7,p8,p9,ncol = 3,labels = &quot;AUTO&quot;)</code></pre>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:combine"></span>
-<img src="{{< blogdown/postref >}}index.zh_files/figure-html/combine-1.png" alt="组合图" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/combine-1.png" alt="组合图" width="672" />
 <p class="caption">
 Figure 3: 组合图
 </p>

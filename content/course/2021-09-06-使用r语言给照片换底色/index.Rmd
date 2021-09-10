@@ -2,7 +2,7 @@
 title: 使用R语言给照片换底色
 author: 欧阳松
 date: '2021-09-06'
-slug: 使用r语言给照片换底色
+slug: change-photo-color
 categories:
   - 教程
   - R
@@ -21,7 +21,7 @@ tags:
 
 ```{r fig,fig.cap="蓝底图",fig.align='center',echo=FALSE}
 suppressMessages( library(magick))
-x<-image_read('/Users/mac/Documents/Gitee/Rblog/logo.jpg')
+x<-image_read('/Users/mac/Documents/Gitee/Rblog/content/images/logo.jpg')
 ggplotify::as.ggplot(x)
 ```
 
@@ -41,7 +41,10 @@ p3<- ggplotify::as.ggplot(image_fill(x,'navyblue',fuzz = 20))
 p4<- ggplotify::as.ggplot(image_fill(x,'steelblue',fuzz = 20))
 p5<- ggplotify::as.ggplot(image_fill(x,'green',fuzz = 20))
 p6<- ggplotify::as.ggplot(image_fill(x,'white',fuzz = 20))
-cowplot::plot_grid(p1,p2,p3,p4,p5,p6,ncol = 3,labels = "AUTO")
+p7<- ggplotify::as.ggplot(x)
+p8<- ggplotify::as.ggplot(image_fill(x,'yellow',fuzz = 20))
+p9<- ggplotify::as.ggplot(image_fill(x,'black',fuzz = 20))
+cowplot::plot_grid(p1,p2,p3,p4,p5,p6,p7,p8,p9,ncol = 3,labels = "AUTO")
 ```
 
 ---

@@ -1,7 +1,6 @@
 ---
 title: 站点导航
 layout: sitemap
-disable_comments: true
 menu:
   header:
     weight: 7

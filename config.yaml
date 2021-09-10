@@ -24,29 +24,33 @@ menu:
       weight: 3
     - name: 常用软件
       url: "/software/"
-      weight: 4
-    - name: 生活点滴
-      url: "/post/"
       weight: 5
-    - name: 学位论文
-      url: "https://swcyo.gitee.io/shzuthesis2021/"
-      weight: 6
+    - name: 博客博文
+      url: "/post/"
+      weight: 4
     - name: 本站搜索
       url: "#"
-      weight: 7
+      weight: 6
       identifier: menu-search
-
+    - name: 友情链接
+      url: "/link/"
+      weight: 7
   footer:
+    - name: 友情链接
+      url: "/link/"
     - name: 文章类别
       url: "/categories/"
-      weight: 1
+      weight: 2
       pre: "optional"
     - name: 文章标签
       url: "/tags/"
-      weight: 2
+      weight: 3
       pre: "optional"
     - name: 回到顶部
       url: "#"
+    - name: 学位论文模板
+      url: "https://swcyo.gitee.io/shzuthesis2021/"
+      weight: 4
 
 params:
   homePosts: 8
@@ -57,7 +61,7 @@ params:
   description: >
     A website built through Hugo and blogdown with the hugo-prose theme.
   footer: >
-    &copy; [Song Ou-Yang](https://swcyo.rbind.io)
+    &copy; [Song Ou-Yang](https://swcyo.rbind.io/)
     Since 2021
 
 markup:
