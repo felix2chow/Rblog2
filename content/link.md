@@ -1,10 +1,10 @@
 ---
 title: 友情链接
-author: 欧阳松
+author: 
 slug: link
-categories: [link]
-tags: [link]
-date: '2021-09-10'
+categories: 
+tags: 
+date: 
 menu:
   header:
     name: 友情链接
@@ -18,7 +18,7 @@ menu:
 | 石河子大学                         | <https://www.shzu.edu.cn/>  |
 | 石河子大学医学院第一附属语言       | <https://www.sdyfy.com.cn/> |
 | 华中科技大学                       | <https://www.hust.edu.cn/>  |
-| 华中科技大学同济医学院附属同济语言 | <https://www.tjh.com.cn/>   |
+| 华中科技大学同济医学院附属同济医院 | <https://www.tjh.com.cn/>   |
 | 长沙医学院                         | <https://www.csmu.edu.cn/>  |
 
 ## 个人博客友情链接
@@ -39,7 +39,6 @@ menu:
 | YuLab-SMU                  | <https://yulab-smu.top/>                 |
 | 统计之都                   | <https://cosx.org/>                      |
 | 生信技能树                 | <http://www.biotrainee.com/>             |
-| 生物信息学天空             | <http://www.bioxxx.cn/forum.php>         |
 
 ## 生信公众号推荐
 
