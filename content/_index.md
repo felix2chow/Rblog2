@@ -5,7 +5,7 @@ menu:
     weight: 1
 ---
 
-[<img src="https://simpleicons.org/icons/r.svg" style="max-width:15%;min-width:40px;float:right;">](https://swcyo.rbind.io/)
+[<img src="/images/vector_medical_symbol.jpeg" style="max-width:25%;min-width:50px;float:right;">](https://swcyo.rbind.io/)
 
 # 欧阳松 (SONG OU-YANG)
 
