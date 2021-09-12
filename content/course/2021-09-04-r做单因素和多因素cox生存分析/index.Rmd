@@ -2,7 +2,7 @@
 title: R做单因素和多因素Cox生存分析
 author: 欧阳松
 date: '2021-09-04'
-slug: r做单因素和多因素cox生存分析
+slug: Cox-survival-analysis
 categories:
   - 教程
   - R
@@ -29,7 +29,7 @@ knitr::kable(head(data))
 
 在运行之前，我们需要加载这几个包
 
-    (library(dplyr)
+    library(dplyr)
     library(survival)
     library(plyr)
 
@@ -158,7 +158,7 @@ Final<-merge.data.frame(UniVar,mulcox,by="Characteristics",all = T,sort = T)
 knitr::kable(Final,caption = "单因素和多因素Cox整合结果",booktabs = TRUE)
 ```
 
----
+------------------------------------------------------------------------
 
 这样一个代表所有单因素和多因素Cox回归生存分析的表格就自动合成了，学会了吗？如果想导出成excel格式就可以输入下面的代码：
 
