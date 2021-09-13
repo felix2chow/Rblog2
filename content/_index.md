@@ -18,3 +18,6 @@ menu:
 擅长泌尿及男性生殖系统常见疾病的诊疗，对男性生殖医学疾病具有较深研究
 
 熟悉各种泌尿男科手术及腔镜微创诊疗技术
+
+![My GitHub Chart](https://ghchart.rshah.org/swcyo)
+
